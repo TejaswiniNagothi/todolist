@@ -1,0 +1,109 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to top, #3e1c54, #f36b7f);
+  color: white;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.todo-app {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.progress {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #fff3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 0;
+  box-shadow: 0 4px 15px;
+}
+
+.fill {
+  height: 100%;
+  width: 0%;
+  background-color: #ff4d6d;
+  transition: 0.3s;
+}
+
+.progress-count {
+  text-align: right;
+  font-weight: bold;
+}
+
+.input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.input-area button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #ff4d6d;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li .actions button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
